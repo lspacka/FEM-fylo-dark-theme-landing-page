@@ -1,0 +1,51 @@
+:root {
+  --db-intro:        hsl(217, 28%, 15%);
+  --db-main:         hsl(218, 28%, 13%);
+  --db-footer:       hsl(216, 53%, 9%);
+  --db-testimonials: hsl(219, 30%, 18%);
+  --cyan:            hsl(176, 68%, 64%);
+  --blue:            hsl(198, 60%, 50%);
+  --light-red:       hsl(0, 100%, 63%);
+  --white:           hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--db-main);
+  color: white;
+}
+
+/* HEADING */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links {
+  display: flex;
+}
+
+/* FEATURES */
+
+
+/* BLURB */
+
+
+/* TESTIMONIALS */
+
+
+/* SIGNUP */
+
+
+/* FOOTER */

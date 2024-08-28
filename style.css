@@ -4,6 +4,14 @@
     - input error msg
 */
 
+/*  got carried away doing little fixes
+    and this is the result. I aint cleaning
+    this shit up. next one I'll do properly, 
+    and plan stuff ahead like an old lady 
+    and her coupons and her lists
+    and her drab suburban pasttimes...
+*/
+
 :root {
   --db-intro:         hsl(217, 28%, 15%);
   --db-main:          hsl(218, 28%, 13%);
@@ -36,6 +44,10 @@ body {
   background-size: 100vw 100vh;
   /* background-repeat: no-repeat; */
   /* text-align: left; */
+}
+
+p:not(.heading-p) {
+  line-height: 1.6;
 }
 
 .main-container {
@@ -102,9 +114,9 @@ button {
   padding: 2rem 0 1rem 0;
 }
 
-/* .heading-title {
-  margin-bottom: 2.5rem;
-} */
+.heading-title {
+  margin-top: 2.5rem;
+}
 
 /* HEADING */
 .heading {
@@ -121,6 +133,11 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 5rem 5rem 0 5rem;
+}
+
+.header-logo {
+  max-inline-size: 100%;
+  height: auto;
 }
 
 .header-links {
@@ -398,7 +415,67 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
-  .heading * {
+   /* .main-container {
     padding: 0;
+   } */
+   .features,
+   .blurb,
+   .testimonials,
+   .footer-container,
+   .footer-links {
+     display: flex;
+     flex-direction: column;
+   }
+  section:not(.signup) {
+    padding: 0 2rem 0 2rem;
+  }
+  .main-container * {
+    padding: 0;
+  }
+  .heading {
+    background-image: url(./images/bg-curvy-mobile.svg);
+  }
+  .heading-title {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+  .heading-p {
+    font-size: 1.097rem;
+    line-height: 1.6;
+  }
+  .heading-button {
+    width: 250px;
+    font-size: 1.1rem;
+  }
+  header {
+    /* display: grid; */
+    padding: 2rem 2rem 5rem 1.5rem;
+  }
+  .header-logo {
+    /* width: 50px; */
+    max-inline-size: 25%;
+    height: auto;
+  }
+  .header-links {
+    font-size: 0.9rem;
+    column-gap: 2rem;
+  }
+  .feature-title{
+    padding: 2rem 0 1rem 0;
+    font-size: 1.23rem;
+  }
+  .blurb-title {
+    font-size: 1.23rem;
+    padding-top: 4rem;
+  }
+  .testimonials {
+    padding: 0 4rem 0 4rem;
+    row-gap: 2rem;
+  }
+  .card {
+    padding: 2.5rem 1.5rem 2rem 1.5rem; 
+  }
+  .card-p {
+    font-size: 0.9rem;
   }
 }

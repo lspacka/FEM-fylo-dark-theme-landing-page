@@ -6,6 +6,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
@@ -35,7 +40,7 @@
       <section class="features">
         <div class="feature">
           <img src="./images/icon-access-anywhere.svg" alt="icon access" class="feature-img">
-          <h3 class="feature-title">Access your files, anywhere</h3>
+          <h2 class="feature-title">Access your files, anywhere</h2>
           <p class="feature-p">
             The ability to use a smartphone, tablet, or computer to access your account means your 
             files follow you everywhere.
@@ -43,7 +48,7 @@
         </div>
         <div class="feature">
           <img src="./images/icon-security.svg" alt="icon security" class="feature-img">
-          <h3 class="feature-title">Security you can trust</h3>
+          <h2 class="feature-title">Security you can trust</h2>
           <p class="feature-p">
             2-factor authentication and user-controlled encryption are just a couple of the security 
             features we allow to help secure your files.
@@ -51,7 +56,7 @@
         </div>
         <div class="feature">
           <img src="./images/icon-collaboration.svg" alt="real time collab icon" class="feature-img">
-          <h3 class="feature-title">Real-time collaboration</h3>
+          <h2 class="feature-title">Real-time collaboration</h2>
           <p class="feature-p">
             Securely share files and folders with friends, family and colleagues for live collaboration. 
             No email attachments required.
@@ -59,7 +64,7 @@
         </div>
         <div class="feature">
           <img src="./images/icon-any-file.svg" alt="icon any file" class="feature-img">
-          <h3 class="feature-title">Store any type of file</h3>
+          <h2 class="feature-title">Store any type of file</h2>
           <p class="feature-p">
             Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
             file types to be securely stored and shared.
@@ -69,7 +74,7 @@
       <section class="blurb">
         <img src="./images/illustration-stay-productive.png" alt="stay productive illustration" class="blurb-img">
         <div class="sp-blurb">
-          <h2 class="blurb-title section-title">Stay productive, wherever you are</h2>
+          <h3 class="blurb-title section-title">Stay productive, wherever you are</h3>
           <p class="blurb-p">
             Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
             storage needs.
@@ -128,22 +133,6 @@
           </div> 
         </div>
       </section>
-      <!-- <div class="signup-container">
-        <section class="signup">
-          <h2 class="signup-header">Get early access today</h2>
-          <p class="signup-p">
-            It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-            questions, our support team would be happy to help you.
-          </p>
-          <form action="" class="send-email">
-            <div class="input">
-              <input type="text" placeholder="email@site.com" class="email-input">
-              <button class="signup-button">Get Started For Free</button>
-            </div>
-            <p class="error-message">Please enter a valid email address</p>
-          </form>
-        </section>
-      </div> -->
     </div>
     <section class="signup-container">
       <div class="signup">
@@ -152,9 +141,9 @@
           It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
           questions, our support team would be happy to help you.
         </p>
-        <form action="" class="send-email">
+        <form action="submit" class="send-email" onsubmit="location.reload(); return false" novalidate>
           <div class="input">
-            <input type="text" placeholder="enter your email here..." class="email-input">
+            <input type="email" title="" placeholder="email@example.com" class="email-input" required oninvalid="this.setCustomValidity('')" oninput="this.setCustomValidity('')">
             <button class="signup-button">Get Started For Free</button>
             <p class="error-message">Please enter a valid email address</p>
           </div>

@@ -1,14 +1,15 @@
 /* 
   TODO:
     - fix links shift - mbe change gap for smtn else
-    - input error msg
+    + input error msg
     + switch signup containers
     + buttons gradient
-    - bigger main container row gap on mobile
+    + bigger main container row gap on mobile
     + scale feature imgs mobile
     + testimonials bigger side padding on mobile
     + scale and move quotes img mobile
     + move footer logo
+    + blurb padding bottom -> underline margin top
 */
 
 /*  
@@ -52,6 +53,12 @@ body {
   background-size: 100vw 100vh;
   /* background-repeat: no-repeat; */
   /* text-align: left; */
+}
+
+h1, h2, h3,
+.header-link {
+  font-family: Raleway;
+  /* letter-spacing: 1px; */
 }
 
 p:not(.heading-p) {
@@ -125,6 +132,7 @@ button {
 .feature-title {
   font-size: 1.5rem;
   padding: 2rem 0 1rem 0;
+  /* font-weight: 600; */
 }
 
 .heading-title {
@@ -157,6 +165,10 @@ header {
   display: flex;
   column-gap: 4rem;
   align-items: end;
+}
+
+.header-link {
+  transition: text-shadow 0.3s ease;
 }
 
 .heading-container {
@@ -213,6 +225,10 @@ header {
   font-size: 1.1rem;
 } */
 
+.blurb-title {
+  font-size: 3rem;
+}
+
 .how-it-works {
   width: fit-content;
   display: grid;
@@ -225,22 +241,23 @@ header {
   width: fit-content;
   font-size: 1.1rem;
   text-decoration: none;
-  padding-bottom: 0.5rem;
+  /* padding-bottom: 0.5rem; */
 }
 
 .arrow {
   /* display: inline; */
-  max-inline-size: 20%;
+  max-inline-size: 25%;
   align-self: center;
   margin-left: 0.5rem;
   height: auto;
-  transform: translateY(-2px);
+  transform: translateY(2px);
 }
 
 .underline {
   height: 0;
-  width: 114%;
+  width: 115%;
   border: 1px solid var(--cyan);
+  margin-top: 0.3rem;
 }
 
 /* TESTIMONIALS */
@@ -281,6 +298,7 @@ header {
 .name {
   font-weight: 700;
   color: white;
+  letter-spacing: 1px;
 }
 
 .occupation {
@@ -358,7 +376,11 @@ header {
   padding: 0.5rem 0 0 2rem;
   font-size: 0.8rem;
   color: var(--light-red);
-  /* visibility: hidden; */
+  visibility: hidden;
+}
+
+.email-input:invalid ~ .error-message {
+  visibility: visible;
 }
 
 /* FOOTER */
@@ -437,13 +459,13 @@ button:hover {
   color: white;
   cursor: pointer;
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer-link:hover {
   color: white;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .social-link:hover {
@@ -462,7 +484,6 @@ button:hover {
 .blurb-link:hover,
 .blurb-link:hover ~ .arrow,
 .blurb-link:hover ~ .underline {
-  /* color: white; */
   cursor: pointer;
   filter: 
     brightness(0) 
@@ -538,11 +559,12 @@ button:hover {
     padding-top: 4rem;
   }
   .blurb-link {
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
     font-size: 0.97rem;
   }
   .arrow {
     max-inline-size: 100%;
+    /* transform: translateY(-px); */
   }
   .underline {
     width: 118%;
@@ -552,7 +574,7 @@ button:hover {
     row-gap: 2rem;
   }
   .quotes {
-    transform: translate(0.7rem, -1.5rem);
+    transform: translate(0.4rem, -1.5rem);
     /* max-inline-size: 15%; */
     width: 30px;
     height: auto;
@@ -561,11 +583,11 @@ button:hover {
     padding: 2.5rem 1.5rem 1.5rem 1.5rem; 
   }
   .card-p {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
   }
   .name {
     font-size: 0.91rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
   }
   .occupation {
     font-size: 0.7rem;
@@ -616,6 +638,12 @@ button:hover {
   }
   .location {
     padding-bottom: 1.5rem;
+  }
+  .loc-icon {
+    transform: translateY(0.5rem);
+  }
+  .contact-img {
+    align-self: end;
   }
   .location-p {
     font-size: 1.1rem;

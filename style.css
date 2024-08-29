@@ -1,23 +1,14 @@
-/* 
-  TODO:
-    - fix links shift - mbe change gap for smtn else
-    + input error msg
-    + switch signup containers
-    + buttons gradient
-    + bigger main container row gap on mobile
-    + scale feature imgs mobile
-    + testimonials bigger side padding on mobile
-    + scale and move quotes img mobile
-    + move footer logo
-    + blurb padding bottom -> underline margin top
-*/
-
 /*  
     got carried away doing tiny fixes
     and this is the result. I aint cleaning
     this shit up jaja. next one I'll do properly, 
     plan ahead, like an old lady and her coupons, 
     and her lists, and her drab suburban pasttimes...
+*/
+
+/* 
+  TODO:
+    + fix links shift - mbe change gap for smtn else
 */
 
 :root {
@@ -43,22 +34,15 @@ html {
 }
 
 body {
-  /* display: grid;
-  place-content: center; */
   background-color: var(--db-main);
   color: white;
   font-family: open sans;
-  /* background-image: url(./images/bg-curvy-desktop.svg);
-  background-position: bottom center; */
   background-size: 100vw 100vh;
-  /* background-repeat: no-repeat; */
-  /* text-align: left; */
 }
 
 h1, h2, h3,
 .header-link {
   font-family: Raleway;
-  /* letter-spacing: 1px; */
 }
 
 p:not(.heading-p) {
@@ -70,9 +54,6 @@ p {
 }
 
 .main-container {
-  /* padding: 8rem 6rem 10rem 6rem; */
-  /* padding: 8rem 6rem 0 6rem;   */
-  /* padding-top: 8rem; */
   padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
@@ -109,7 +90,6 @@ p {
 
 /* BUTTONS */
 button {
-  /* background-color: var(--blue); */
   background: linear-gradient(to right, var(--cyan), var(--blue));
   color: white;
   font-family: inherit;
@@ -132,7 +112,6 @@ button {
 .feature-title {
   font-size: 1.5rem;
   padding: 2rem 0 1rem 0;
-  /* font-weight: 600; */
 }
 
 .heading-title {
@@ -168,7 +147,7 @@ header {
 }
 
 .header-link {
-  transition: text-shadow 0.3s ease;
+  transition: text-shadow .3s;
 }
 
 .heading-container {
@@ -192,8 +171,6 @@ header {
 .feature {
   display: grid;
   grid-template-rows: 1fr .1fr 1fr;
-  /* grid-template-columns: 1fr; */
-  /* padding: 0 4rem 0 4rem; */
 }
 
 .feature-img {
@@ -201,7 +178,6 @@ header {
 }
 
 .feature-p {
-  /* font-size: 1.28rem; */
   padding: 0 5rem 0 5rem;
 }
 
@@ -210,7 +186,6 @@ header {
 .blurb {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* column-gap: 4rem; */
 }
 
 .sp-blurb {
@@ -220,10 +195,6 @@ header {
   padding: 6rem 0 0 4rem;
   row-gap: 2rem;
 }
-
-/* .blurb-p {
-  font-size: 1.1rem;
-} */
 
 .blurb-title {
   font-size: 3rem;
@@ -241,11 +212,9 @@ header {
   width: fit-content;
   font-size: 1.1rem;
   text-decoration: none;
-  /* padding-bottom: 0.5rem; */
 }
 
 .arrow {
-  /* display: inline; */
   max-inline-size: 25%;
   align-self: center;
   margin-left: 0.5rem;
@@ -265,13 +234,7 @@ header {
   display: flex;
   text-align: left;
   column-gap: 3rem;
-  /* padding-top: 4rem; */
 }
-
-/* .testimonials {
-  display: flex;
-  column-gap: 3rem;
-} */
 
 .card {
   display: flex;
@@ -290,9 +253,6 @@ header {
 .card-id {
   display: flex;
   column-gap: 1rem;
-  /* display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: .1fr 1fr; */
 }
 
 .name {
@@ -307,9 +267,7 @@ header {
 
 .quotes {
   position: absolute;
-  /* z-index: -1; */
   transform: translate(-0.5rem, -2.5rem);
-  /* left: 0; */
 }
 
 /* SIGNUP */
@@ -323,12 +281,10 @@ header {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  /* border: 1px orange solid; */
   border-radius: 10px;
   background-color: var(--db-intro);
   padding: 3rem 0 0.5rem 0;
   width: 60%;
-  /* place-self: center; */
   transform: translateY(7.5rem);
 }
 
@@ -354,7 +310,6 @@ header {
 }
 
 .email-input {
-  /* width: 60%; */
   width: 100%;
   height: 40px;
   border-radius: 50px;
@@ -364,7 +319,6 @@ header {
 }
 
 .signup-button {
-  /* width: 25%; */
   width: 90%;
   height: 40px;
   font-size: 0.9rem;
@@ -442,12 +396,7 @@ footer {
   align-self: start;
   justify-self: end;
   column-gap: 1rem;
-  /* place-self: end; */
 }
-
-/* .social-link {
-  width: 40px;
-} */
 
 /* HOVER STATES */
 button:hover {
@@ -459,13 +408,13 @@ button:hover {
   color: white;
   cursor: pointer;
   text-decoration: underline;
-  font-weight: 600;
+  text-shadow: 0 0 .7px #fff, 0 0 .7px #fff;
 }
 
 .footer-link:hover {
   color: white;
   cursor: pointer;
-  font-weight: 600;
+  text-shadow: 0 0 .7px #fff, 0 0 .7px #fff;
 }
 
 .social-link:hover {
@@ -511,9 +460,6 @@ button:hover {
      display: flex;
      flex-direction: column;
    }
-  /* section:not(.signup) {
-    padding: 0 2rem 0 2rem;
-  } */
    .heading,
    .features,
    .blurb {
@@ -535,11 +481,9 @@ button:hover {
     font-size: 1.1rem;
   }
   header {
-    /* display: grid; */
     padding: 2rem 2rem 5rem 1.5rem;
   }
   .header-logo {
-    /* width: 50px; */
     max-inline-size: 25%;
     height: auto;
   }
@@ -547,9 +491,6 @@ button:hover {
     font-size: 0.9rem;
     column-gap: 2rem;
   }
-  /* .feature-img {
-    max-inline-size: 20%;
-  } */
   .feature-title{
     padding: 2rem 0 1rem 0;
     font-size: 1.23rem;
@@ -559,12 +500,10 @@ button:hover {
     padding-top: 4rem;
   }
   .blurb-link {
-    /* padding-bottom: 0.5rem; */
     font-size: 0.97rem;
   }
   .arrow {
     max-inline-size: 100%;
-    /* transform: translateY(-px); */
   }
   .underline {
     width: 118%;
@@ -575,7 +514,6 @@ button:hover {
   }
   .quotes {
     transform: translate(0.4rem, -1.5rem);
-    /* max-inline-size: 15%; */
     width: 30px;
     height: auto;
   }
@@ -587,7 +525,6 @@ button:hover {
   }
   .name {
     font-size: 0.91rem;
-    /* letter-spacing: 1px; */
   }
   .occupation {
     font-size: 0.7rem;
@@ -611,7 +548,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 0;
-    /* row-gap: 2rem; */
   }
   .email-input {
     font-size: 0.8rem;

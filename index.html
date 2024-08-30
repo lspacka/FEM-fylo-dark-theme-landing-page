@@ -143,7 +143,8 @@
         </p>
         <form action="submit" class="send-email" onsubmit="location.reload(); return false" novalidate>
           <div class="input">
-            <input type="email" title="" placeholder="email@example.com" class="email-input" required oninvalid="this.setCustomValidity('')" oninput="this.setCustomValidity('')">
+            <input type="email" title="" placeholder="email@example.com" class="email-input" >
+            <!-- <p class="error-message">Please enter a valid email address</p> -->
             <button class="signup-button">Get Started For Free</button>
             <p class="error-message">Please enter a valid email address</p>
           </div>

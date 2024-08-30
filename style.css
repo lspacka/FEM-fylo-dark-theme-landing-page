@@ -2,13 +2,8 @@
     got carried away doing tiny fixes
     and this is the result. I aint cleaning
     this shit up jaja. next one I'll do properly, 
-    plan ahead, like an old lady and her coupons, 
-    and her lists, and her drab suburban pasttimes...
-*/
-
-/* 
-  TODO:
-    + fix links shift - mbe change gap for smtn else
+    plan ahead; like an old lady and her coupons, 
+    and her lists, and her drab suburban pastimes...
 */
 
 :root {
@@ -74,7 +69,6 @@ p {
   max-inline-size: 100%;
 }
 
-.loc-icon,
 .social-link {
   max-inline-size: 100%;
   align-self: center;
@@ -305,7 +299,7 @@ header {
 .input {
   display: grid;
   grid-template-columns: 1.09fr 0.5fr;
-  grid-template-rows: 1fr  1fr;
+  grid-template-rows: 1fr 1fr;
   padding: 0 4rem 0 4rem;
 }
 
@@ -319,6 +313,8 @@ header {
 }
 
 .signup-button {
+  grid-column: 2;
+  grid-row: 1;
   width: 90%;
   height: 40px;
   font-size: 0.9rem;
@@ -326,6 +322,8 @@ header {
 }
 
 .error-message {
+  grid-column: 1;
+  grid-row: 2;
   text-align: left;
   padding: 0.5rem 0 0 2rem;
   font-size: 0.8rem;
@@ -365,7 +363,10 @@ footer {
 }
 
 .loc-icon {
+  max-inline-size: 100%;
+  flex-shrink: 0;
   align-self: start;
+  transform: translateY(0.5rem);
 }
 
 .contact {
@@ -376,7 +377,7 @@ footer {
 }
 
 .contact-img {
-  align-self: start;
+  align-self: end;
 }
 
 .footer-links {
@@ -549,14 +550,14 @@ button:hover {
     flex-direction: column;
     padding: 0;
   }
-  .email-input {
-    font-size: 0.8rem;
-    order: 1;
-  }
   .email-input,
   .signup-button {
     width: 100%;
     margin: 0;
+  }
+  .email-input {
+    font-size: 0.8rem;
+    order: 1;
   }
   .error-message {
     order: 2;
@@ -575,12 +576,12 @@ button:hover {
   .location {
     padding-bottom: 1.5rem;
   }
-  .loc-icon {
+  /* .loc-icon {
     transform: translateY(0.5rem);
-  }
-  .contact-img {
+  } */
+  /* .contact-img {
     align-self: end;
-  }
+  } */
   .location-p {
     font-size: 1.1rem;
   }

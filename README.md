@@ -11,7 +11,7 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page---html-css-IoqaHK2vsE)
 - [Live Site](https://lspacka.github.io/FEM-fylo-dark-theme-landing-page/)
 
 ### Built with
